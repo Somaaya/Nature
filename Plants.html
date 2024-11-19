@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+</head>
+<style>
+body{
+  display: grid;
+  align-items: center;
+  font-family: Arial, sans-serif;  
+  background-color: #ffffff;
+  }
+.navbar {
+  background-color: #b4691922;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   margin-bottom: 20px;
+   text-align: center;
+   animation: slideIn 1.5s ease-out; /* أنيميشن للقائمة */
+  }
+.navbar a {
+  color: #8f0c40;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-weight: revert;
+  border-radius: 4px;
+  margin: 5px;
+ }
+.navbar a:hover {
+  color: #996226;
+ }
+img{
+    width: 950px;
+    height: 420px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-left: 300px;
+}
+.p{
+ font-size: large;
+  border: 10px solid;
+  padding: 10px;
+  border-image: url(b1.png) 20% ;
+  color: #573918;
+  margin-top: 50px;
+}
+h3,h2 {
+    text-align: center; 
+    color: #996226; 
+    font-size: 24px; 
+    margin-bottom: 2px; 
+}
+ul {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 10px; 
+    list-style-type: none;
+}
+li {
+    margin: 10px; 
+}
+li:hover {
+       transform: scale(1.02); /* تكبير طفيف عند التمرير */
+        }
+
+img.round{
+    width:350px; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    margin-left: 50px;
+}
+ol {
+padding: 10px;
+margin: 20px auto; 
+max-width: 600px; 
+list-style-type:none; 
+ }
+li {
+background-color: #986a584f; /* خلفية فاتحة للعناصر */
+color: #573918;
+border-right: 5px solid #b46919;
+padding: 15px;
+margin-bottom: 15px;
+border-radius: 8px; /* زوايا مستديرة */
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+}
+@media (max-width: 768px) {
+    .navbar a {
+                padding: 10px; /* تقليل الحشوة */
+                font-size: 14px; /* تغيير حجم الخط */
+            }
+            img {
+                width: 100%; /* جعل الصور تأخذ عرض الشاشة بالكامل */
+                height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+                margin-left: 0; /* إزالة الهامش الجانبي */
+            }
+            
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .p {
+                font-size: medium;
+            }
+            h3, h2 {
+                font-size: 20px;
+            }
+        }
+        
+/* القائمة تنزلق */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+</style>
+<body>
+    <div class="navbar">
+    <a href="index.html">The main</a>
+    <a href="Types.html">Types of nature </a>
+    <a href="Resources.html">Natural Resources</a>
+    <a href="factors.html">Natural factors </a>
+    <a href="Wild.html">Wild life</a>
+    <a href="Plants.html">Plants</a>
+    </div>
+    <img src="Plants.jpg" alt="">
+    <p class="p">Plants are eukaryotic living organisms, and they have a special kingdom called the plant kingdom.</p>
+    <h3>Parts of plants </h3>
+    <ul >
+        <li >
+                <img class="round" src="root.jpg" alt="Root">
+        </li>
+        <li >
+                <img class="round" src="stems.jpg" alt="Stems">
+        </li>
+        <li >
+                <img  class="round" src="leaves.jpg" alt="Leaves">
+        </li>
+    </ul>
+ <h2>Benefits of plants</h2>
+ <ol>
+    <li>A source of food for humans and animals.</li>
+    <li>The presence of plants on Earth leads to the renewal of oxygen on Earth. </li>
+    <li>Plants contain essential nutrients for the human body, such as carbohydrates, vitamins, fiber, salts, proteins, and acids.</li>
+    <li>Many medicines are extracted from plants to treat humans, and various perfumes.</li>
+    <li>Plant cultivation provides a source of livelihood for the farmer, and it is also used in the fields of handicraft industry. </li>
+ </ol>
+</body>
+</html>

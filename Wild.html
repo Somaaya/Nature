@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+</head>
+<style>
+body{
+  display: grid;
+  justify-content:center;
+  align-items: center;
+  font-family: Arial, sans-serif;  
+  background-color: #ffffff;
+  }
+.navbar {
+  background-color: #b4691922;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   margin-bottom: 20px;
+   text-align: center;
+   animation: slideIn 1.5s ease-out; /* أنيميشن للقائمة */
+  }
+.navbar a {
+  color: #8f0c40;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-weight: revert;
+  border-radius: 4px;
+  margin: 5px;
+ }
+.navbar a:hover {
+  color: #996226;
+ }
+ img{
+    width: 950px;
+    height: 420px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-left: 300px;
+}
+.container{
+  display:flex;
+  margin: 20px;
+  align-items: center;
+  }
+.p{
+  display: flex;
+  font-size: 18px;
+  border: 10px solid transparent; /* حدود شفافة */
+  padding: 10px;
+  border-image: url(b1.png) 20% stretch;
+  text-align:justify;
+  color: #573918;
+  margin-top: 40px;
+}
+h4 {
+  color: #996226;
+  font-size: 18px;
+ }
+ul {
+  display: flex;
+  flex-direction: column; 
+  border-left: 8px solid;
+  padding: 10px;
+  color: #573918;
+  border-image: url(b1.png) 15% stretch;
+  margin: 20px;
+ }
+li {
+ margin: 10px 15px; 
+ font-size: 18px;
+ line-height: 1.6;
+ list-style-type:disclosure-closed;
+
+}
+    /* استخدمنا media عشان تتكيف مع حجم الشاشه لو صغر  */
+    @media (max-width: 768px) {
+            .navbar a {
+                padding: 10px; /* تقليل الحشوة */
+                font-size: 14px; /* تغيير حجم الخط */
+            }
+            img {
+                width: 100%; /* جعل الصور تأخذ عرض الشاشة بالكامل */
+                height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+                margin-left: 0; /* إزالة الهامش الجانبي */
+            }
+            .p {
+                font-size: medium; /* تغيير حجم النص */
+                padding: 10px; /* زيادة الحشوة */
+            }
+            li {
+                padding: 10px; /* تقليل الحشوة في العناصر */
+                font-size:16px;
+            }
+          
+        }
+        
+/* القائمة تنزلق */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+</style>
+<body>
+    <div class="navbar">
+    <a href="index.html">The main</a>
+    <a href="Types.html">Types of nature </a>
+    <a href="Resources.html">Natural Resources</a>
+    <a href="factors.html">Natural factors </a>
+    <a href="Wild.html">Wild life</a>
+    <a href="Plants.html">Plants</a>
+    </div>
+ <img src="d.jpg" alt="">
+ <div class="container">
+    <p class="p">Every living thing has its own ecosystem. The ecosystem is the natural habitat of these organisms, where their basic needs of food, water, and shelter are met to protect them from climatic conditions and survive. All living things need to adapt to their environment to be able to live. Adaptation is the change that occurs in the body or behavior of an organism to help it survive in its environment. Wild animals can only live in places that they are adapted to.</p>
+    </div>
+    <img src="R.jpg" alt="">
+    <ul>
+<h4>Characteristics of wild animals:</h4>
+ <li>Living in the wild: An animal is classified as wild when its natural habitat is the wilderness.</li>
+ <li>Untamable: An animal is classified as wild when it is self-reliant in finding its home and obtaining its food to survive, and does not interact with humans.</li>
+    </ul>
+    <img src="a.jpg" alt="">
+    <ul>
+    <h4>The importance of wild animals:</h4>
+    <li>Wildlife is one of the most important pillars of tourism, as people are attracted to the beauty and life of wild animals, which has a positive impact on the economy, creates new jobs, and has a positive impact on the environment and the preservation of these animals.</li>
+    <li>Historically, wildlife has played a major role in the daily lives of many cultures; as part of religious ceremonies, community events, and community bonding, wildlife still plays a major role in many third world countries.</li>
+    <li>Wildlife migration patterns, distribution and behaviour can be a vital indicator of ecosystem health and the deeper impacts of climate change.</li>
+    <li>Scientists can use animal distribution models to determine the best ways to conserve the natural environment.</li>
+    </ul>
+    <img src="c.jpg" alt="">
+    <ul>
+    <h4>Facts about wild animals:</h4>
+    <li>According to the US National Academy of Sciences, 4% of the world's mammals are wild animals.</li>
+    <li>An average of 96 elephants are killed for ivory in Africa every day, according to the Wildlife Conservation Society, and more are killed than are born; more than 60% die as a result of poaching.</li>
+    <li>Biodiversity in Latin America has declined by about 83% since the 1970s, according to Defenders of Wildlife.</li>
+    <li>The number of lions in Africa has declined by about 42% over the past two decades, according to the African Wildlife Foundation.</li>
+    </ul>
+    <img src="f.jpg" alt="">
+
+</body>
+</html>

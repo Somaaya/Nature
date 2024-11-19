@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+</head>
+<style>
+body{
+  display: grid;
+  align-items: center;
+  font-family: Arial, sans-serif;  
+  background-color: #ffffff;
+  }
+.navbar {
+  background-color: #b4691922;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   margin-bottom: 20px;
+   text-align: center;
+   animation: slideIn 1.5s ease-out; /* أنيميشن للقائمة */
+  }
+.navbar a {
+  color: #8f0c40;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-weight: revert;
+  border-radius: 4px;
+  margin: 5px;
+ }
+.navbar a:hover {
+  color: #996226;
+ }
+img{
+    width: 950px;
+    height: 420px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-left: 300px;
+}
+.p{
+ font-size: large;
+  border: 10px solid;
+  padding: 10px;
+  border-image: url(b1.png) 20% ;
+  color: #573918;
+  margin-top: 50px;
+}
+p{
+  font-size: large;
+  padding: 10px;
+  color: #ce6b09;
+  margin-top: 50px;
+}
+ul {
+padding: 10px;
+margin: 20px auto; 
+max-width: 600px; 
+list-style-type:georgian; 
+background-image: url(ff.jpg);  
+background-size: cover; 
+background-repeat: no-repeat; 
+ }
+li {
+background-color: #f0f0f0; /* خلفية فاتحة للعناصر */
+color: #573918;
+border-right: 5px solid #b46919;
+border-bottom:  5px solid #b46919;
+padding: 15px;
+margin-bottom: 15px;
+border-radius: 8px; /* زوايا مستديرة */
+ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+}
+li:hover {
+       transform: scale(1.02); /* تكبير طفيف عند التمرير */
+        }
+            /* استخدمنا media عشان تتكيف مع حجم الشاشه لو صغر  */
+       @media (max-width: 768px) {
+            .navbar a {
+                padding: 10px; /* تقليل الحشوة */
+                font-size: 14px; /* تغيير حجم الخط */
+            }
+            img {
+                width: 100%; /* جعل الصور تأخذ عرض الشاشة بالكامل */
+                height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+                margin-left: 0; /* إزالة الهامش الجانبي */
+            }
+            .p {
+                font-size: medium; /* تغيير حجم النص */
+                padding: 15px; /* زيادة الحشوة */
+            }
+            ul {
+                padding: 10px; /* إضافة حشوة للقائمة */
+            }
+            li {
+                padding: 10px; /* تقليل الحشوة في العناصر */
+            }
+        }
+        
+/* القائمة تنزلق */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+</style>
+<body>
+    <div class="navbar">
+    <a href="index.html">The main</a>
+    <a href="Types.html">Types of nature </a>
+    <a href="Resources.html">Natural Resources</a>
+    <a href="factors.html">Natural factors </a>
+    <a href="Wild.html">Wild life</a>
+    <a href="Plants.html">Plants</a>
+    </div>
+    <img src="factors.jpg" alt="">
+    <p class="p">He defined nature as the set of physical, chemical, and biological factors that affect living organisms or the ecological community, and determine its form and survival.</p>
+    <!-- <img src="ff.jpg" alt=""> -->
+    <ul>
+        <p>There are many roles and functions that nature performs, the most important of which are the following:</p>
+        <li>
+            Continuous provision of resources, as nature contributes to providing basic production resources, including both renewable and non-renewable resources. 
+        </li>
+        <li>
+            Maintaining the sustainability of life by providing genetic and biological diversity, in addition to the things necessary for human life, such as: sun, soil, water, and air.
+        </li>
+        <li>
+            Waste disposal , as consumption and production activities produce different forms of waste, and nature helps to get rid of them.
+        </li>
+        <li>
+            Enhancing the quality of life, as nature adds a lot to the quality of life of individuals by allowing them to enjoy the beauty of nature from rivers, mountains, and seas.
+        </li>
+    </ul>
+</body>
+</html>

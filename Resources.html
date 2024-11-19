@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+</head>
+<style>
+body{
+  display: grid;
+  align-items: center;
+  font-family: Arial, sans-serif;  
+  background-color: #ffffff;
+  }
+.navbar {
+  background-color: #b4691922;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   margin-bottom: 20px;
+   text-align: center;
+   animation: slideIn 1.5s ease-out; /* أنيميشن للقائمة */
+  }
+.navbar a {
+  color: #8f0c40;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-weight: revert;
+  border-radius: 4px;
+  margin: 5px;
+ }
+.navbar a:hover {
+  color: #996226;
+ }
+ img{
+    width: 950px;
+    height: 420px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-left: 300px;
+}
+.p{
+ font-size: large;
+  border: 10px solid;
+  padding: 10px;
+  border-image: url(b1.png) 20% ;
+  color: #573918;
+  margin-top: 50px;
+}
+h3 {
+ color: #996226;
+ margin-left: 20px;
+ text-align: center;
+ font-size: larger;
+ }
+ol {
+padding: 10px;   
+margin: 20px auto; 
+list-style-type: none; 
+  }
+li {
+ background-color: #986a584f;
+ color: #573918;
+ border-left: 5px solid #b46919;
+ border-top:  5px solid #b46919;
+ /* border: 1px solid #f2f4f6;  */
+ padding: 25px;
+ margin-bottom: 25px;
+ border-radius: 8px; 
+ transition: transform 0.2s; 
+        }
+ li:hover {
+ transform: translateY(-5px);
+        }
+img.round {
+            width: 100px; /* عرض الصورة */
+            height: 100px; /* ارتفاع الصورة */
+            border-radius: 10%; /* يجعل الشكل دائري */
+            object-fit: cover; /* يحافظ على نسبة العرض إلى الارتفاع */
+            margin: 20px; /* إضافة مسافة بين الصور */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+        }
+        .image-container {
+            display: flex; /* استخدام Flexbox لتوزيع الصور */
+            margin-top: 1px; /* إضافة مسافة فوق الصور */
+        }
+        /* استعلام وسائط للشاشات الصغيرة */
+@media (max-width: 768px) {
+.navbar a {
+   padding: 10px; /* تقليل الحشوة */
+    font-size: 14px; /* تغيير حجم الخط */
+    }
+  .p {
+    font-size: medium;
+    padding: 5px;
+  }
+  h3, ol li {
+    font-size: medium;
+    padding: 10px;
+  }
+  img {
+                width: 100%; /* جعل الصور تأخذ عرض الشاشة بالكامل */
+                height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+                margin-left: 0; /* إزالة الهامش الجانبي */
+            }
+            .p {
+                font-size: medium; /* تغيير حجم النص */
+                padding: 15px; /* زيادة الحشوة */
+            }
+}
+
+/* القائمة تنزلق */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+</style>
+<body>
+    <div class="navbar">
+    <a href="index.html">The main</a>
+    <a href="Types.html">Types of nature </a>
+    <a href="Resources.html">Natural Resources</a>
+    <a href="factors.html">Natural factors </a>
+    <a href="Wild.html">Wild life</a>
+    <a href="Plants.html">Plants</a>
+    </div>
+ <img src="Resources.webp" alt="">
+ <p class="p">The term natural resources refers to those goods and materials that exist naturally on Earth and that humans benefit from in their daily activities.</p>
+ <img src="na.webp" alt="">
+ <h3> Natural resources are divided into two main sections:</h3>
+ <ol>
+    <li>
+        <h3>Renewable natural resources:</h3>
+    <p>is resources that are constantly renewed without being depleted, such as water, sun, air, and soil.</p>
+    <div class="image-container">
+        <img class="round" src="r1.jpg" alt="Renewable Resource 1">
+        <img class="round" src="r2.jpg" alt="Renewable Resource 2">
+        <img class="round" src="r3.jpg" alt="Renewable Resource 3">
+    </div>
+</li>
+    <li>
+        <h3>Non-renewable natural resources:</h3>
+    <p>Non-renewable resources are natural materials that are not renewed as quickly as they are consumed. They are limited resources that are found beneath the Earth's surface.</p>
+    <div class="image-container">
+        <img class="round" src="soil1.jpg" alt="Non-renewable Resource 1">
+        <img class="round" src="fire.jpg" alt="Non-renewable Resource 2">
+        <img class="round" src="water.jpg" alt="Non-renewable Resource 3">
+    </div>
+</li>
+</ol>
+</body>
+</html>

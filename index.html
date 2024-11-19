@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+</head>
+<style>
+body{
+  display: grid;
+  justify-content:center;
+  align-items: start;
+  font-family: Arial, sans-serif;  
+  background-color: #ffffff;
+  margin: 0; /* إزالة الهوامش الافتراضية */
+  }
+.navbar {
+  background-color: #b4691922;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   margin-bottom: 20px;
+   text-align: center;
+   animation: slideIn 1.5s ease-out; /* أنيميشن للقائمة */
+  }
+.navbar a {
+  color: #9d141c;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-weight: revert;
+  border-radius: 4px;
+  margin: 5px;
+ }
+.navbar a:hover {
+  color: #996226;
+ }
+.container{
+  display:flex;
+  margin: 20px;
+  align-items: center;
+  }
+#h2{
+  border: 2px solid rgb(72, 38, 25);
+  padding: 20px;
+  color: #f0e5e5;
+  text-align: justify;
+  margin: 20px ;
+  flex: 1;
+  font-size: larger;
+  width: 94%; /* اجعل العرض ثابتاً */
+}
+h2,h1 {
+    color: #996226;
+    font-size: 30px;
+    margin-left: 15px;
+}
+.p{
+  border: 10px solid transparent;
+  padding: 10px;
+  border-image: url(b1.png) 20% stretch;
+  text-align:center;
+  color: #573918;
+  margin-top: 180px;
+  animation: fadeIn 2s ease-in; /* أنيميشن للنص */
+}
+img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-left: 50px;
+    animation: zoomIn 2s ease-in-out; /* أنيميشن للصور */
+}
+ button {
+    padding:10px 10px;
+    background-color:#edc0e2;
+    color:#37220b;
+    border:none;
+    border-radius:5px;
+    font-size: 16px;
+    cursor:pointer;
+    margin-left: 750px;
+    animation: bounce 2s  ease-in-out;; /* أنيميشن متكرر للزر */
+}
+button:hover{
+    color: #000;
+}
+div#main {
+    display: flex;
+    flex-wrap:wrap;
+    gap:10px;
+    /* margin-top: 30px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px; */
+    justify-content: center; /* محاذاة العناصر في المنتصف */
+    margin: 30px 10px; /
+}
+@media (max-width: 768px) {
+   .p {
+        font-size: 12px; /* تصغير حجم الخط */
+        line-height: 1.5; /* ضبط ارتفاع السطر ليقلل المسافة بين الأسطر */
+        padding: 10px; /* تقليل الحشوة داخل الفقرة */
+        margin: 15px 0; /* تقليل المسافة العلوية والسفلية */
+            }
+    #h2 {
+        font-size: 18px; /* تصغير حجم النص */
+        padding: 15px; /* ضبط الحشوة */
+    }
+    img {
+        width: 100%; /* جعل الصور تأخذ عرض الشاشة بالكامل */
+        height: 100%; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    }
+    button {
+        margin: 10px 0; /* ضبط الهوامش */
+        width: 100%; /* جعل الزر بعرض الشاشة */
+    }
+  
+}
+/* الرسوم المتحركة */
+
+/* نص يتلاشى */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* الزر يرتد */
+@keyframes bounce {
+  0%{
+    transform: translateY(-10px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+}
+
+/* القائمة تنزلق */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+</style>
+<body>
+    <div class="navbar">
+    <a href="Types.html">Types of nature </a>
+    <a href="Resources.html">Natural Resources</a>
+    <a href="factors.html">Natural factors </a>
+    <a href="Wild.html">Wild life</a>
+    <a href="Plants.html">Plants</a>
+    </div>
+    <div class="container">
+    <img src="tree.jpg" alt="tree">
+    <p class="p">The Nature is defined as everything found in the universe from various aspects, as it includes everything that God Almighty created, and man had no interference. The concept of nature is launched starting from the smallest element in the universe, which is the atom, to the outer world and the vast space, and includes the picturesque views of oceans, springs, forests, mountains, and all the creatures that live in the universe, in addition to the laws that govern and control the universe.</p>
+    </div>
+    <a href="#main">
+    <button >Discover the beauty of nature</button>
+   </a>
+   <h1>Elements of Nature:</h1>
+    <div id="h2" style="background: url(water.jpg) no-repeat; background-size:cover;background-position: center;width: 94%;height: 50%;">
+    <p>The Water:  is one of the most important basic elements that ensure the continuity of life, as nothing lives without water.</p></div>
+    <div id="h2"style="background: url(fire.jpg) no-repeat; background-size:cover;background-position: center;width: 94%;height: 50%;">
+    <p> The Fire:  is one of the most power ful energy elements, as it is a form of energy. </p>
+    </div>
+    <div id="h2"style="background: url(Soil.jpg) no-repeat; background-size:cover;background-position: center;width: 94%;height: 50%;">
+    <p> The Soil:  is the name given to everything that takes the form of dirt, sand, stones, or crushed rocks. Soil forms the outer crust of planet Earth. </p>
+    </div>
+    <div id="h2"style="background: url(metal.jpg) no-repeat; background-size:cover;background-position: center;width: 94%;height: 50%;">
+    <p> The Metal: Metals are in three states: hard metals such as iron, soft metals such as gold, and liquid metals such as mercury.</p>
+     </div>
+     <div id="h2"style="background: url(p.webp) no-repeat; background-size:cover;background-position: center;width: 94%;height: 50%;">
+     <p> Other elements: such as animals, plants, and different terrains of mountains, valleys, and plains, in addition to air.</p>
+      </div>
+     <div id="main">
+    <img src="nature.jpg" alt="nature">   
+    <img src="n.jpg" alt="tree">   
+    <img src="n1.jpg" alt="tree">   
+    <img src="n2.jpg" alt="tree">   
+    <img src="n3.jpg" alt="tree">   
+    <img src="n4.jpg" alt="tree"> 
+    <img src="n5.jpg" alt="tree">
+    <img src="n6.jpg" alt="tree"> 
+    <img src="n7.jpg" alt="tree"> 
+    <img src="n8.jpg" alt="tree"> 
+    <img src="n9.jpg" alt="tree">  
+    <img src="n10.jpg" alt="tree"> 
+</div>
+</body>
+</html>
